@@ -1,0 +1,365 @@
+@import url(global.css);
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 200ms;
+}
+.center-y{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+.content-wrapper{
+    grid-column: 2/3;
+    position: relative;
+    display: grid;
+    grid-template-rows: 20vh 45vh 35vh;
+}
+
+/* HEADER LOGO */
+header{
+    grid-row: 1/2;
+}
+
+
+/* AVATARS */
+
+body div{
+    position: absolute;
+}
+
+.first-avatar{
+    right: 10%;
+    top: 40%;
+}
+.second-avatar{
+    right: 12%;
+    top: 5%;
+}
+.third-avatar{
+    left: 5%;
+    top: 15%;
+}
+.fourth-avatar{
+    right: 15%;
+    bottom: 5%;
+}
+.fifth-avatar{
+    right: 28%;
+    top: 10%;
+}
+.sixth-avatar{
+    right: 33%;
+    top: 45%;
+}
+
+/* MAIN CONTENT */
+main{
+    height: auto;
+    margin-top: 5%;
+    grid-row: 2/3;
+    z-index: 10;
+}
+.main-content{
+    width: 100%;
+}
+main h1{
+    font: 8em var(--secondary-font);
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1em;
+}
+
+main p{
+    width: 23em;
+    font: 1.3em var(--primary-font);
+    font-weight: 500;
+    line-height: 1.3em;
+    color: var(--secondary);
+    margin-top: 2em;
+}
+main button{
+    margin-top: 2.2em;
+    padding: 1em;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    outline: none;
+    color: var(--bg-color);
+    font-size: large;
+    font-weight: bold;
+    font-family: var(--primary-font);
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+}
+main button:hover{
+    background-color: var(--bg-color);
+    color: var(--primary);
+}
+
+/* FOOTER CONTENT */
+footer{
+    grid-row: 3/4;
+    align-items: initial;
+}
+a{
+    margin-left: -.7em;
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: var(--primary-font);
+    font-size: 1.3em;
+}
+a img{
+    margin-right: .7em;
+    transition: all 200ms;
+}
+a:hover img{
+    filter: contrast(70%);
+}
+
+
+@media (max-width:1109px) {
+    
+    .content-wrapper{
+        grid-template-rows: 20vh 50vh 30vh;
+    }
+    
+    .first-avatar{
+        right: 5%;
+        top: 30%;
+    }
+    .second-avatar{
+        right: 6%;
+        top: 5%;
+    }
+    .third-avatar{
+        left: 5%;
+        top: 12%;
+    }
+    .fourth-avatar{
+        right: 15%;
+        bottom: 5%;
+    }
+    .fifth-avatar{
+        right: 25%;
+        top: 15%;
+    }
+    .sixth-avatar{
+        right: 17%;
+        top: 45%;
+    }
+    
+    main h1{
+        font: 6em var(--secondary-font);
+        font-weight: 600;
+        line-height: 1em;
+    }
+}
+
+@media (max-width:834px) {
+    
+    .content-wrapper{
+        grid-template-rows: 20vh 50vh 30vh;
+    }
+    
+    .first-avatar{
+        right: 5%;
+        top: 30%;
+    }
+    .second-avatar{
+        right: 5%;
+        top: 5%;
+    }
+    .third-avatar{
+        left: 5%;
+        top: 12%;
+    }
+    .fourth-avatar{
+        display: none;
+    }
+    .fifth-avatar{
+        right: 30%;
+        top: 15%;
+    }
+    .sixth-avatar{
+        right: 10%;
+        top: 60%;
+    }
+    
+    main h1{
+        font: 4em var(--secondary-font);
+        font-weight: 600;
+        line-height: 1em;
+    }
+}
+@media (max-width:559px) {
+    
+    .wrapper{
+        grid-template-columns: .2fr 6fr .2fr;
+    }
+    .content-wrapper{
+        grid-template-rows: 20vh 50vh 30vh;
+    }
+    
+    .first-avatar{
+        display: none;
+    }
+    .second-avatar{
+        right: 5%;
+        top: 5%;
+    }
+    .third-avatar{
+        left: 5%;
+        top: 12%;
+    }
+    .fourth-avatar{
+        display: none;
+    }
+    .fifth-avatar{
+        display: none;
+    }
+    .sixth-avatar{
+        right: 10%;
+        top: 60%;
+    }
+    
+    main h1{
+        font: 3.5em var(--secondary-font);
+        font-weight: 600;
+        line-height: 1em;
+    }
+}
+@media (max-width:559px) {
+    
+    .wrapper{
+        grid-template-columns: .3fr 6fr .3fr;
+    }
+    .content-wrapper{
+        grid-template-rows: 20vh 50vh 30vh;
+    }
+    
+    .first-avatar{
+        display: none;
+    }
+    .second-avatar{
+        right: 5%;
+        top: 5%;
+    }
+    .third-avatar{
+        left: 5%;
+        top: 12%;
+    }
+    .fourth-avatar{
+        display: none;
+    }
+    .fifth-avatar{
+        display: none;
+    }
+    .sixth-avatar{
+        right: 10%;
+        top: 60%;
+    }
+    
+    main h1{
+        font: 3.5em var(--secondary-font);
+        font-weight: 600;
+        line-height: 1em;
+    }
+    a{
+        margin-left: 0;
+    }
+}
+@media (max-width:500px) {
+    
+    .wrapper{
+        grid-template-columns: .2fr 6fr .2fr;
+    }
+    .content-wrapper{
+        grid-template-rows: 20vh 50vh 30vh;
+    }
+    
+    .first-avatar{
+        display: none;
+    }
+    .second-avatar{
+        right: 5%;
+        top: 5%;
+    }
+    .third-avatar{
+        left: 5%;
+        top: 12%;
+    }
+    .fourth-avatar{
+        display: none;
+    }
+    .fifth-avatar{
+        display: none;
+    }
+    .sixth-avatar{
+        right: 10%;
+        top: 60%;
+    }
+    main h1{
+        font: 3.5em var(--secondary-font);
+        font-weight: 600;
+        line-height: 1em;
+    }
+    main p{
+        width: 100%;
+    }
+    a{
+        margin-left: 0;
+    }
+}
+@media (max-width:428px) {
+    
+    .wrapper{
+        grid-template-columns: .2fr 6fr .2fr;
+    }
+    .content-wrapper{
+        grid-template-rows: 20vh 50vh 30vh;
+    }
+    
+    .first-avatar{
+        display: none;
+    }
+    .second-avatar{
+        right: 5%;
+        top: 5%;
+    }
+    .third-avatar{
+        left: 5%;
+        top: 12%;
+    }
+    .fourth-avatar{
+        display: none;
+    }
+    .fifth-avatar{
+        display: none;
+    }
+    .sixth-avatar{
+        right: 10%;
+        top: 60%;
+    }
+    main h1{
+        font: 3em var(--secondary-font);
+        font-weight: 600;
+        line-height: 1em;
+    }
+    main p{
+        width: 100%;
+    }
+    a{
+        margin-left: 0;
+    }
+}

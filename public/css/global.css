@@ -1,0 +1,14 @@
+:root{
+
+    /* Colors */
+
+    --bg-color: #013243;
+    --primary: #32f5c8 ;
+    --secondary: #9ebcc9;
+
+    /* Fonts */
+
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Sen', sans-serif;
+
+}
