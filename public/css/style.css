@@ -129,11 +129,10 @@ a:hover img{
 
 
 @media (max-width:1109px) {
-    
+
     .content-wrapper{
         grid-template-rows: 20vh 50vh 30vh;
     }
-    
     .first-avatar{
         right: 5%;
         top: 30%;
@@ -158,7 +157,6 @@ a:hover img{
         right: 17%;
         top: 45%;
     }
-    
     main h1{
         font: 6em var(--secondary-font);
         font-weight: 600;
@@ -167,11 +165,9 @@ a:hover img{
 }
 
 @media (max-width:834px) {
-    
     .content-wrapper{
         grid-template-rows: 20vh 50vh 30vh;
     }
-    
     .first-avatar{
         right: 5%;
         top: 30%;
@@ -195,7 +191,6 @@ a:hover img{
         right: 10%;
         top: 60%;
     }
-    
     main h1{
         font: 4em var(--secondary-font);
         font-weight: 600;
@@ -203,14 +198,13 @@ a:hover img{
     }
 }
 @media (max-width:559px) {
-    
+
     .wrapper{
         grid-template-columns: .2fr 6fr .2fr;
     }
     .content-wrapper{
         grid-template-rows: 20vh 50vh 30vh;
     }
-    
     .first-avatar{
         display: none;
     }
@@ -232,7 +226,6 @@ a:hover img{
         right: 10%;
         top: 60%;
     }
-    
     main h1{
         font: 3.5em var(--secondary-font);
         font-weight: 600;
@@ -240,14 +233,13 @@ a:hover img{
     }
 }
 @media (max-width:559px) {
-    
+
     .wrapper{
         grid-template-columns: .3fr 6fr .3fr;
     }
     .content-wrapper{
         grid-template-rows: 20vh 50vh 30vh;
     }
-    
     .first-avatar{
         display: none;
     }
@@ -269,7 +261,6 @@ a:hover img{
         right: 10%;
         top: 60%;
     }
-    
     main h1{
         font: 3.5em var(--secondary-font);
         font-weight: 600;
@@ -280,14 +271,13 @@ a:hover img{
     }
 }
 @media (max-width:500px) {
-    
+
     .wrapper{
         grid-template-columns: .2fr 6fr .2fr;
     }
     .content-wrapper{
         grid-template-rows: 20vh 50vh 30vh;
     }
-    
     .first-avatar{
         display: none;
     }
@@ -326,14 +316,13 @@ a:hover img{
     }
 }
 @media (max-width:428px) {
-    
+
     .wrapper{
         grid-template-columns: .2fr 6fr .2fr;
     }
     .content-wrapper{
         grid-template-rows: 20vh 50vh 30vh;
     }
-    
     .first-avatar{
         display: none;
     }
