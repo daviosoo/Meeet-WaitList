@@ -320,6 +320,10 @@ a:hover img{
     a{
         margin-left: 0;
     }
+    footer{
+        align-items: flex-end !important;
+        margin-bottom: 1em;
+    }
 }
 @media (max-width:428px) {
     
@@ -337,9 +341,15 @@ a:hover img{
         right: 5%;
         top: 5%;
     }
+    .second-avatar img{
+        width: 100px;
+    }
     .third-avatar{
         left: 5%;
         top: 12%;
+    }
+    .third-avatar img{
+        width: 70px;
     }
     .fourth-avatar{
         display: none;
@@ -351,6 +361,9 @@ a:hover img{
         right: 10%;
         top: 60%;
     }
+    .sixth-avatar img{
+        width: 120px;
+    }
     main h1{
         font: 3em var(--secondary-font);
         font-weight: 600;
@@ -361,5 +374,9 @@ a:hover img{
     }
     a{
         margin-left: 0;
+    }
+    footer{
+        align-items: flex-end !important;
+        margin-bottom: 1em;
     }
 }
